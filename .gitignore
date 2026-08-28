@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+*.egg-info/
+
+# OCR cache and outputs (keep structure, ignore content)
+outputs/ocr_raw/*.json
+outputs/json/*.json
+outputs/summary/*.json
+outputs/logs/*.log
+data/processed/*.jpg
+data/processed/*.png
+
+# Raw receipt images (not committed — download from Drive)
+data/raw/*.jpg
+data/raw/*.jpeg
+data/raw/*.png
+data/raw/*.bmp
+data/raw/*.tiff
+data/raw/*.webp
+data/raw20/
+data/sample100/
+
+# Keep placeholder .gitkeep files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/**/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
