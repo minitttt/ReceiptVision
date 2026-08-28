@@ -80,22 +80,6 @@ python src/pipeline.py --input data/raw/1.jpg
 python src/pipeline.py --input data/raw --output outputs --summary-only
 ```
 
-### Skip saving debug images
-```bash
-python src/pipeline.py --input data/raw --output outputs --no-debug
-```
-
-### Python API (single receipt)
-```python
-from src.pipeline import process_receipt
-
-result = process_receipt("data/raw/1.jpg")
-print(result["total_amount"])
-```
-
-Use `--no-debug` only when processed image artifacts are not needed. OCR results are cached in `outputs/ocr_raw/`.
-
----
 
 ## Output Structure
 
